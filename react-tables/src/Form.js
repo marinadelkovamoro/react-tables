@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 class NameForm extends React.Component {
     constructor(props) {
         super(props);
@@ -20,7 +21,9 @@ class NameForm extends React.Component {
 
     render() {
 
+
         return (
+            <div>
             <form onSubmit={this.handleSubmit}>
                 <label>
                     Name
@@ -44,6 +47,9 @@ class NameForm extends React.Component {
                 </label>
                 <input type="submit" value="Add Student" />
             </form>
+
+            
+            </div>
         );
     }
 }
